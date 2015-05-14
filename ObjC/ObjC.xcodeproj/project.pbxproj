@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D78340091B043C0100A16C3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D78340081B043C0100A16C3B /* main.m */; };
+		F44D00311B04C37D0004FFF3 /* XEAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = F44D002E1B04C37D0004FFF3 /* XEAsset.m */; };
+		F44D00321B04C37D0004FFF3 /* XEEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = F44D00301B04C37D0004FFF3 /* XEEmployee.m */; };
+		F44D00351B04C38C0004FFF3 /* XEPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = F44D00341B04C38C0004FFF3 /* XEPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		D78340051B043C0100A16C3B /* ObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78340081B043C0100A16C3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F44D002D1B04C37D0004FFF3 /* XEAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEAsset.h; sourceTree = "<group>"; };
+		F44D002E1B04C37D0004FFF3 /* XEAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEAsset.m; sourceTree = "<group>"; };
+		F44D002F1B04C37D0004FFF3 /* XEEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEEmployee.h; sourceTree = "<group>"; };
+		F44D00301B04C37D0004FFF3 /* XEEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEEmployee.m; sourceTree = "<group>"; };
+		F44D00331B04C38C0004FFF3 /* XEPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XEPerson.h; sourceTree = "<group>"; };
+		F44D00341B04C38C0004FFF3 /* XEPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XEPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +66,23 @@
 		D78340071B043C0100A16C3B /* ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				F44D002C1B04C3020004FFF3 /* Model */,
 				D78340081B043C0100A16C3B /* main.m */,
 			);
 			path = ObjC;
+			sourceTree = "<group>";
+		};
+		F44D002C1B04C3020004FFF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F44D00331B04C38C0004FFF3 /* XEPerson.h */,
+				F44D00341B04C38C0004FFF3 /* XEPerson.m */,
+				F44D002D1B04C37D0004FFF3 /* XEAsset.h */,
+				F44D002E1B04C37D0004FFF3 /* XEAsset.m */,
+				F44D002F1B04C37D0004FFF3 /* XEEmployee.h */,
+				F44D00301B04C37D0004FFF3 /* XEEmployee.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D78340091B043C0100A16C3B /* main.m in Sources */,
+				F44D00351B04C38C0004FFF3 /* XEPerson.m in Sources */,
+				F44D00321B04C37D0004FFF3 /* XEEmployee.m in Sources */,
+				F44D00311B04C37D0004FFF3 /* XEAsset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +261,7 @@
 				D783400E1B043C0100A16C3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
