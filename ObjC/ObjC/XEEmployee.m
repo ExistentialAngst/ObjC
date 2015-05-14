@@ -20,11 +20,22 @@
     
     return 0;
 }
+
 -(void) addAssets:(XEAsset *)asset{
 
 }
+
 -(unsigned int) valueOfAssets{
     return 0;
+}
+
+- (float)bodyMassIndex{
+    float normalBmi = [super bodyMassIndex];
+    return normalBmi * .9;
+}
+
+- (NSString *) description{
+    return [NSString stringWithFormat:@"<Employee %d>", self.employeeID];
 }
 
 @end

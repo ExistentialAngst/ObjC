@@ -22,7 +22,7 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"mike weight:%d", mike.weightInKilos);
         NSLog(@"mike height:%.2f", mike.heightInMeters);
-        NSLog(@"Employee %u was hired on %@", mike.employeeID, mike.hiredate);
+        NSLog(@"%@ was hired on %@", mike, mike.hiredate);
         
         float bmi = [mike bodyMassIndex];
         double yearsOfEmployment = [mike yearsOfEmployment];
