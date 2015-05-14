@@ -10,4 +10,21 @@
 
 @implementation XEEmployee
 
+-(double) yearsOfEmployment{
+    
+    if(self.hiredate){
+        NSDate *now = [NSDate date];
+        NSTimeInterval seconds = [now timeIntervalSinceDate:self.hiredate];
+        return seconds / 31557600.0;
+    }
+    
+    return 0;
+}
+-(void) addAssets:(XEAsset *)asset{
+
+}
+-(unsigned int) valueOfAssets{
+    return 0;
+}
+
 @end
